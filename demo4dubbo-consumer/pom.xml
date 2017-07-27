@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>demo4dubbo-consumer</artifactId>
+	<packaging>jar</packaging>
+
+	<parent>
+		<artifactId>demo4dubbo</artifactId>
+		<groupId>com.heiha.demo</groupId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+	<name>demo4dubbo-consumer</name>
+	<description>Demo for dubbo</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.heiha.demo</groupId>
+			<artifactId>demo4dubbo-interface</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>dubbo</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.101tec</groupId>
+			<artifactId>zkclient</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>demo4dubbo-consumer</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>com.heiha.demo.demo4dubbo.ConsumerApplication</mainClass>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
