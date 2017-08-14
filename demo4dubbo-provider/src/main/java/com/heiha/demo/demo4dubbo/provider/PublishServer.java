@@ -17,7 +17,7 @@ public class PublishServer implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
-                new String[] {"/demo-notice-dubbo.xml"});
+                new String[] {"/demo-all-dubbo.xml"});
         System.out.println(this.getClass().getName().concat(" will start"));
         context.start();
         System.out.println(this.getClass().getName().concat(" running"));
